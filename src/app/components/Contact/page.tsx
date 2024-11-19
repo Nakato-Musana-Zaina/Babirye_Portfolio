@@ -1,9 +1,3 @@
-
-
-
-
-
-
 "use client";
 
 
@@ -23,7 +17,7 @@ export default function ContactForm() {
     submitting: false,
   });
 
-  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleInputChange = (e: { target: { name: string; value: string; }; }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -59,9 +53,17 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="p-8 bg-gray-800 text-white flex flex-col lg:flex-row items-center justify-between mt-20 lg:mt-0"> 
-      
-      <div className="mb-8 lg:mb-0 lg:w-1/3 flex flex-col items-center lg:items-start">
+    <section id="contacts" className="p-4 mt-24 lg:mt-0"> 
+     {/* <h2 className="text-5xl font-bold mb-4 text-center lg:justify-start">
+          <FaEnvelope className="text-center text-yellow-300" />
+          Contact Me
+        </h2> */}
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold flex items-center  m-8 mb-4 text-center md:text-left fade-in">
+          <FaEnvelope className="mr-2 text-yellow-300" size={40} /> Contact Me
+        </h2>
+    <div className='flex flex-col lg:flex-row items-center bg-gray-800 p-6 text-white justify-between'>
+
+    <div className="mb-8 lg:mb-0 lg:w-1/3 flex flex-col items-center lg:items-start">
         <button
           onClick={handleBookMeeting}
           className="flex items-center justify-center px-8 py-4 text-lg border border-yellow-300 rounded font-semibold hover:bg-gray-700 transition"
@@ -86,10 +88,7 @@ export default function ContactForm() {
       </div>
 
       <div className="lg:w-2/3">
-        <h2 className="text-4xl font-bold mb-4 text-center lg:text-left flex items-center justify-center lg:justify-start">
-          <FaEnvelope className="mr-2" />
-          Contact Me
-        </h2>
+        
         <form onSubmit={handleSubmit} className="mt-4 space-y-6">
           <div className="flex flex-col space-y-2">
             <label htmlFor="name" className="text-sm font-semibold">Name</label>
@@ -151,6 +150,9 @@ export default function ContactForm() {
           &copy; 2024 Babirye Musana Fatuma. All rights reserved.
         </div>
       </div>
+    </div>
+     
+
     </section>
   );
 }

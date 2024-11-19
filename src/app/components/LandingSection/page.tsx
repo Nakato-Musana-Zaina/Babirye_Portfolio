@@ -29,16 +29,15 @@ export default function LandingSection() {
   }, []);
 
   return (
-    <div className="relative h-screen bg-gray-900 text-white overflow-hidden">
-      {/* Background overlay */}
+    <div id="landingpage" className="relative h-screen bg-gray-900 text-white overflow-hidden">
+    
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      {/* Navbar */}
       <NavBar />
 
-      {/* Main content */}
+     
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center h-full px-6 md:px-12 text-center md:text-left">
-        {/* Animated icons in the background */}
+        
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           {icons.map((icon) => {
             const IconComponent = icon.icon;
