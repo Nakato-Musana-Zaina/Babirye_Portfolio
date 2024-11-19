@@ -107,7 +107,7 @@ export default function PersonalStatement() {
           <FaUserAlt className="mr-2 text-yellow-300" size={40} /> About Me
         </h2>
         <p className="text-2xl md:text-xl font-light italic text-center md:text-left fade-in">
-          Together, let's innovate and create impactful <br /> solutions for a
+          Together, let&apos;s innovate and create impactful <br /> solutions for a
           better tomorrow.
         </p>
 
@@ -115,16 +115,16 @@ export default function PersonalStatement() {
           <div className="mb-10">
             <p className="mt-4 text-lg md:text-xl font-light fade-in">
               I am a 
-              {  } 
+              {" "} 
               <span className="font-semibold text-yellow-300">resourceful and inventive</span> individual who aspires to apply my technical know-how and fervor for solving problems to contribute to projects at the leading edge of technology.
             </p>
           </div>
 
           <div>
             <p className="text-lg md:text-xl font-light mb-6 fade-in">
-              I have a solid grounding in the principles of{ }
-              <span className="font-semibold text-yellow-300">civil engineering</span>. My interest and confidence lie in the design, development, and optimization of projects with a focus on not just{  }
-              <span className="font-semibold text-yellow-300">efficiency and sustainability</span> but also <span className="font-semibold text-yellow-300">user experience</span>. I am a{  }
+              I have a solid grounding in the principles of{" "}
+              <span className="font-semibold text-yellow-300">civil engineering</span>. My interest and confidence lie in the design, development, and optimization of projects with a focus on not just{" "}
+              <span className="font-semibold text-yellow-300">efficiency and sustainability</span> but also <span className="font-semibold text-yellow-300">user experience</span>. I am a{" "}
               <span className="font-semibold text-yellow-300">team player</span> who values diversity and open communication, with an unflinching commitment to the success of the group.
             </p>
           </div>
