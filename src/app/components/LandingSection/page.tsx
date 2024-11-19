@@ -60,7 +60,7 @@ export default function LandingSection() {
 
         <div className="mb-8 md:mb-0 md:w-1/2 animate-fadeIn">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 text-yellow-300">
-            Babirye Musana
+            Babirye Musana <br/> Fatumah
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl font-light mb-8 max-w-xl mx-auto md:mx-0">
             Civil Engineer
